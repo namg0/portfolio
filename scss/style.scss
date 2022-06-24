@@ -158,7 +158,7 @@
                     float: right; margin-left: 20px; 
                     img{
                         width: 100%; height: 100%; object-fit: cover;
-                        filter: brightness(97%);
+                        opacity: 0.9;
                     }
                    
                     h1{
@@ -199,7 +199,7 @@
                     h1{
                         font: bold 40px/1 'arial'; color: #fff;
                         position: absolute; top: 250px; right: 430px;
-                        text-align: center; opacity: 0.8;
+                        text-align: center; opacity: 1;
                         letter-spacing: 2px;
                     }
                 }
