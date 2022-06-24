@@ -428,7 +428,7 @@ a {
   color: #333;
 }
 #main .inner .wrap .txt h1 {
-  font: bold 35px/1 "arial";
+  font: bold 35px/1 "Zilla Slab";
   margin-bottom: 100px;
 }
 #main .inner .wrap .txt::after {
@@ -514,6 +514,7 @@ a {
   font: bold 20px/50px "arial";
   color: rgba(179, 215, 232, 0.7);
   text-align: center;
+  letter-spacing: 1px;
 }
 #shop .inner #tab dt.on a {
   background: rgba(179, 215, 232, 0.7);
@@ -528,6 +529,7 @@ a {
   background: rgba(179, 215, 232, 0.7);
   text-align: center;
   display: none;
+  letter-spacing: 1px;
 }
 #shop .inner #tab dd img {
   width: 480px;
