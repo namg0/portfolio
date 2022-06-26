@@ -164,17 +164,18 @@
                 &:nth-of-type(1){
                     width: 280px; height: 500px; 
                     float: right; margin-left: 20px; 
+                    position: relative;
                     img{
                         width: 100%; height: 100%; object-fit: cover;
-                        opacity: 0.8; 
+                        opacity: 0.8; transition: 0.3s; 
                     }
-                   
+
                     h1{
                         font: bold 23px/1 'arial'; color: #fff;
                         position: absolute; top: 100px; right: 45px;
                         text-align: center; 
                         opacity: 0.8; text-shadow: 0px 5px 2px #333;
-                        letter-spacing: 1px ;
+                        letter-spacing: 1px ; transition: 0.3s;
                        
                     }
 
@@ -187,7 +188,34 @@
                     i{
                         position: absolute; bottom: 90px; right: 130px;
                         transform: scale(7);
-                        color: #fff; opacity: 0.8;
+                        color: #fff; opacity: 0.8; z-index: 2;
+                    }
+
+                    .hov{
+                        width: 100%; height: 100%;
+                        position: absolute; left: 0%; top: 0%;
+                        text-align: center; color: #fff; opacity: 0;
+                        transition: 0.3s; 
+                        
+                        img{
+                            opacity: 0.8;
+                        }
+                        
+                        
+                    }
+
+                    &:hover .hov{
+                        opacity: 1;
+
+                    }
+
+                    &:hover >img{
+                        opacity: 0;
+                        
+                    }
+
+                    &:hover >h1{
+                        opacity: 0;
                     }
                     
                 }
@@ -195,9 +223,10 @@
                 &:nth-of-type(2){
                     width: 580px; height: 500px; 
                     float: right; margin-left: 20px;
+                    overflow: hidden;
                     img{
                         width: 100%; height: 100%; object-fit: cover;
-                        opacity: 0.9; 
+                        opacity: 0.9; transition: 0.5s;
                         
 
                         
@@ -214,24 +243,28 @@
                         text-align: center; opacity: 1;
                         letter-spacing: 2px;
                     }
+
+                    &:hover img{
+                        transform: scale(1.2);
+                        filter: hue-rotate(330deg);
+                    }
                 }
             
                 &:nth-of-type(3){
                     width: 280px; height: 240px;
                     display: flex; justify-items: flex-start;
                     margin-bottom: 20px; position: relative;
-                    transition: 1s;
+                    
                     img{
                         width: 100%; height: 100%; object-fit: cover;
-                        
-                        
+                        transition: 0.3s;
                     }
                 
                     .txt{                        
-                        position: absolute; left: 20%; top: 31%;
+                        position: absolute; left: 20%; top: 33%;
                         text-align: center; color: #fff; opacity: 0.8;
                         h1{
-                            font: bold 40px/1 'arial'; margin-bottom: 20px;
+                            font: bold 40px/1 'arial'; margin-bottom: 15px;
                             
                         }
                         p{
@@ -240,30 +273,52 @@
                     }
 
                     .hov{
+                        width: 100%; height: 100%;
                         position: absolute; left: 0%; top: 0%;
                         text-align: center; color: #fff; opacity: 0;
-                        transition: 0.5s; 
-                        img{
-                            width: 280px; height: 240px; object-fit: cover;
-                        }
-                        h1{
-                            font: bold 40px/1 'arial'; margin-bottom: 20px;
-                            position: absolute; left: 27%; top: 31%;
-                            
-                        }
-                        p{
-                            font: 20px/1 'arial';
-                            position: absolute; left: 26%; bottom: 37%; 
-                        }
+                        transition: 0.3s; 
                         
+                        .hovImg{
+                            img{
+                                width: 100%; height: 240px; object-fit: cover;
+                            }
+                        }
+
+                        .hovT{
+                            position: absolute; left: 28%; top: 33%;
+                            
+                            h1{
+                                font: bold 40px/1 'arial'; margin-bottom: 15px;
+                                
+                                
+                            }
+                            p{
+                                font: 20px/1 'arial';
+                                
+                            }
+                        }
+                      
+                    }
+
+                    &:hover .hov{
+                        opacity: 0.8;
 
                     }
+
+                    &:hover >img{
+                        opacity: 0;
+                    }
+                        
+
+                    
                     &::after{
                         content: ''; display: block;
                         width: 240px; height: 200px;
                         position: absolute; left: 17px; top: 17px;
                         border: 2px solid #fff; opacity: 0.6;
                     }
+
+                   
  
                 }
 
@@ -297,19 +352,6 @@
                 }
 
             }
-
-
-            // &:hover .hov{
-            //     opacity: 1;
-            // }
-
-            // &:hover &:nth-of-type(3) .txt{
-            //     opacity: 0;
-            // }
-
-            // &:hover &:nth-of-type(3) .hov{
-            //     opacity: 0.8;
-            // }
 
         }
     }
