@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Zilla+Slab:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=Fira+Sans:wght@300&family=Sansita:ital@1&family=Secular+One&family=Shrikhand&family=Zilla+Slab:wght@300&display=swap");
 * {
   margin: 0px;
   padding: 0px;
@@ -197,15 +197,20 @@ a {
   text-align: center;
 }
 #visual .inner h1 {
-  font: bold 120px/1 "arial";
+  font: bold 120px/1 "Sansita";
   color: #fff;
-  letter-spacing: 3px;
-  opacity: 0.6;
+  letter-spacing: 2px;
+  position: absolute;
+  top: 35%;
+  opacity: 0.4;
   margin-bottom: 20px;
 }
 #visual .inner p {
+  position: absolute;
+  top: 60%;
   font: 20px/1.5 "arial";
   color: #fff;
+  opacity: 0.4;
 }
 
 /* brand 영역 */
@@ -244,11 +249,11 @@ a {
   transition: 0.3s;
 }
 #brand .inner .wrap article:nth-of-type(1) h1 {
-  font: bold 23px/1 "arial";
+  font: bold 23px/1 "Sansita";
   color: #fff;
   position: absolute;
   top: 100px;
-  right: 45px;
+  right: 62px;
   text-align: center;
   opacity: 0.8;
   text-shadow: 0px 5px 2px #333;
@@ -323,18 +328,18 @@ a {
   right: 317px;
 }
 #brand .inner .wrap article:nth-of-type(2) h1 {
-  font: bold 40px/1 "arial";
+  font: 50px/1 "Abril Fatface";
   color: #fff;
   position: absolute;
   top: 250px;
-  right: 430px;
+  right: 395px;
   text-align: center;
   opacity: 1;
   letter-spacing: 2px;
 }
 #brand .inner .wrap article:nth-of-type(2):hover img {
   transform: scale(1.2);
-  filter: hue-rotate(330deg);
+  filter: hue-rotate(15deg);
 }
 #brand .inner .wrap article:nth-of-type(3) {
   width: 280px;
@@ -359,8 +364,9 @@ a {
   opacity: 0.8;
 }
 #brand .inner .wrap article:nth-of-type(3) .txt h1 {
-  font: bold 40px/1 "arial";
+  font: bold 40px/1 "Sansita";
   margin-bottom: 15px;
+  letter-spacing: 2px;
 }
 #brand .inner .wrap article:nth-of-type(3) .txt p {
   font: 20px/1 "arial";
@@ -383,12 +389,13 @@ a {
 }
 #brand .inner .wrap article:nth-of-type(3) .hov .hovT {
   position: absolute;
-  left: 28%;
+  left: 27%;
   top: 33%;
 }
 #brand .inner .wrap article:nth-of-type(3) .hov .hovT h1 {
-  font: bold 40px/1 "arial";
+  font: bold 40px/1 "Sansita";
   margin-bottom: 15px;
+  letter-spacing: 2px;
 }
 #brand .inner .wrap article:nth-of-type(3) .hov .hovT p {
   font: 20px/1 "arial";
@@ -425,14 +432,15 @@ a {
 #brand .inner .wrap article:nth-of-type(4) .txt {
   position: absolute;
   left: 17%;
-  top: 15%;
+  top: 10%;
   text-align: center;
   color: #fff;
   opacity: 0.9;
 }
 #brand .inner .wrap article:nth-of-type(4) .txt h1 {
-  font: bold 35px/1 "arial";
-  margin-bottom: 65px;
+  font: bold 38px/1 "Sansita";
+  margin-bottom: 80px;
+  letter-spacing: 2px;
 }
 #brand .inner .wrap article:nth-of-type(4) .txt p {
   font: 14px/1.3 "arial";
@@ -480,6 +488,7 @@ a {
 #main .inner .wrap .txt h1 {
   font: bold 35px/1 "Zilla Slab";
   margin-bottom: 100px;
+  transition: 1s 0s;
 }
 #main .inner .wrap .txt::after {
   content: "";
@@ -494,19 +503,29 @@ a {
 #main .inner .wrap .txt p {
   font: 13px/1.5 "arial";
   margin-bottom: 40px;
+  transition: 1s 0s;
 }
-#main .inner .wrap .txt a {
+#main .inner .wrap .txt .btnOpen {
   display: block;
-  width: 90px;
+  width: 120px;
   height: 30px;
   font: 10px/1 "arial";
   color: #fff;
   background: rgba(43, 42, 42, 0.7);
   margin: 0 auto;
   padding: 10px;
+  transition: 1s 0s;
 }
-#main .inner .wrap .txt a:hover {
+#main .inner .wrap .txt .btnOpen:hover {
   background: rgb(179, 215, 232);
+}
+#main .inner .wrap .txt.off h1, #main .inner .wrap .txt.off p, #main .inner .wrap .txt.off::after {
+  transform: translateY(-200%);
+  opacity: 0;
+}
+#main .inner .wrap .txt.off .btnOpen {
+  transform: translateY(200%);
+  opacity: 0;
 }
 #main .inner .wrap .box {
   width: 400px;
@@ -515,6 +534,11 @@ a {
   top: 145px;
   right: 200px;
   background: rgba(179, 215, 232, 0.5);
+  transition: 1s 0s;
+}
+#main .inner .wrap .box.off {
+  transform: translateX(100%);
+  opacity: 0;
 }
 #main .inner .wrap .pic img {
   width: 430px;
@@ -522,6 +546,95 @@ a {
   position: absolute;
   top: 0;
   right: 70px;
+  transition: 1s 0.5s;
+}
+#main .inner .wrap .pic.off {
+  transform: translateX(100%);
+  opacity: 0;
+}
+#main .inner aside {
+  width: 45vw;
+  height: 70vh;
+  position: absolute;
+  top: 15%;
+  left: 20%;
+  display: none;
+  z-index: 10;
+}
+#main .inner aside .top {
+  width: 0%;
+  height: 4px;
+  background: rgba(179, 215, 232, 0.5);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+#main .inner aside .right {
+  width: 4px;
+  height: 0%;
+  background: rgba(179, 215, 232, 0.5);
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+#main .inner aside .bottom {
+  width: 0%;
+  height: 4px;
+  background: rgba(179, 215, 232, 0.5);
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+#main .inner aside .left {
+  width: 4px;
+  height: 0%;
+  background: rgba(179, 215, 232, 0.5);
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+#main .inner aside .inner {
+  width: 100%;
+  height: 100%;
+  background: rgb(179, 215, 232);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  opacity: 0;
+  padding: 45px;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+#main .inner aside .inner .pic {
+  width: 50%;
+  opacity: 0.8;
+}
+#main .inner aside .inner .content {
+  width: 45%;
+  text-align: center;
+  margin-left: 35px;
+  margin-top: 30px;
+}
+#main .inner aside .inner .content h2 {
+  font: normal 2.5vw/1 "Sansita";
+  color: #fff;
+  margin-top: 30px;
+}
+#main .inner aside .inner .content p {
+  font: 15px/1.3 "arial";
+  color: #333;
+  margin-top: 40px;
+}
+#main .inner aside .inner .content .btnClose {
+  display: block;
+  position: absolute;
+  top: 40px;
+  right: 40px;
+}
+#main .inner aside .inner .content .btnClose span {
+  font: normal 14px/1 "arial";
+  color: #333;
 }
 
 /* Shop 영역 */
@@ -561,7 +674,7 @@ a {
   width: 100%;
   height: 100%;
   background: #fff;
-  font: bold 20px/50px "arial";
+  font: bold 20px/50px "Zilla Slab";
   color: rgba(179, 215, 232, 0.7);
   text-align: center;
   letter-spacing: 1px;
@@ -594,13 +707,13 @@ a {
   width: 420px;
   height: 380px;
   position: absolute;
-  top: 60px;
+  top: 80px;
   right: 50px;
-  padding: 70px;
+  padding: 50px;
 }
 #shop .inner #tab dd .txt p {
   font: 17px/1.4 "arial";
-  margin-bottom: 70px;
+  margin-bottom: 30px;
   color: #fff;
 }
 #shop .inner #tab dd .txt a {
