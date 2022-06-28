@@ -87,6 +87,15 @@
                     width: 500px; height: 400px;
                     position: absolute; left: 170px; top: 80px;
                 }
+                .picCon1{
+                    transform: rotateX(0deg);
+                }
+                .picCon2{
+                    transform: rotateX(0deg);
+                    opacity: 0;
+                }
+
+              
             }
             .txt{
                 width: 450px; height: 480px;
@@ -109,7 +118,8 @@
                     padding: 10px;
                     &:hover{
                         background: rgb(179, 215, 232);
-                    }    
+                    }
+                   
                    
                 }
                 &::after{
@@ -569,6 +579,38 @@
                     width: 480px; height: 380px; object-fit: cover;
                     position: absolute; top: 60px; left: 80px; opacity: 0.8;                
                 }
+
+                // .slider{
+                //     width: 480px; height: 380px;
+                //     position: relative; overflow: hidden;
+                //     ul{
+                //         position: absolute; top: -120px; left: -200px;
+                //         width: 300%; height: 100%; 
+                //         li{
+                //             width: 33.333%; height: 100%;
+                //             float: left; object-fit: cover;
+                //         }
+                //     }
+
+
+                // }
+                .prev{          
+                    img{
+                        width: 40px; height: 40px;
+                        position: absolute; top: 47%; left: 3%;
+
+                    }
+                }
+
+                .next{                    
+                    img{
+                        width: 40px; height: 40px;
+                        position: absolute; top: 47%; left: 53%;
+                    
+                    }
+                }
+                
+
                 .txt{
                     width: 420px; height: 380px;
                     position: absolute; top: 80px; right: 50px;
@@ -577,7 +619,7 @@
                         font: 17px/1.4 'Kanit'; margin-bottom: 30px;
                         color: #fff;
                     }
-                    a{
+                    .btnShop{
                         display: block;
                         width: 140px; height: 30px;
                         border: 2px solid #fff;
@@ -591,6 +633,8 @@
                     }
                 
                 }
+                
+                       
                 &.on{
                     display: block;
                 }

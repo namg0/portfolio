@@ -128,3 +128,72 @@ function activation(item,index){
     }
     item[index].classList.add("on");
 }
+
+/* Shop 슬라이드 효과 */
+const slider = document.querySelector(".slider");
+const ul = slider.querySelector("ul");
+const lis = ul.querySelectorAll("li");
+const img = lis.querySelectorAll("img");
+const prev = document.querySelector(".prev");
+const next = document.querySelector(".next");
+const speedSlide = 1000;
+
+let len = lis.length; 
+let enableClick = true;
+
+init();
+
+next.addEventListener("click",(e)=>{
+    e.preventDefault();
+
+    if(enableClick){
+        nextSlide();
+        enableClick = false;
+    }
+})
+
+prev.addEventListener("click",(e)=>{
+    e.preventDefault();
+
+    if(enableClick){
+        prevSlide();
+        enableClick = false;
+    }
+})
+
+function init(){
+    ul.style.left = "-100%";
+    ul.prepend(ul.lastElementChild);
+    ul.style.width = `${100 * len}%`; 
+    lis.forEach((li)=>{
+        li.style.width = `${100 / len}`;
+    })
+}
+
+function nextSlide(){
+    new Anim(ul,{
+        prop : 'left',
+        value : '-200%',
+        duration : speedSlide,
+        callback : ()=>{
+            ul.style.left = "-100%";
+            ul.append(ul.firstElementChild);
+            enableClick = true;
+
+        }
+   })
+}
+
+function prevSlide(){
+    new Anim(ul,{
+        prop : 'left',
+        value : "0%",
+        duration : speedSlide,
+        callback : ()=>{
+            ul.style.left = "-100%";
+            ul.prepend(ul.lastElementChild);
+            enableClick = true;
+        }
+    })
+
+}

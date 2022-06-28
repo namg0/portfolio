@@ -114,15 +114,15 @@ a {
 #contentSub .menu .box1 {
   width: 350px;
   height: 130px;
-  background: rgba(179, 215, 232, 0.8);
+  background: rgba(179, 215, 232, 0.6);
   position: absolute;
   left: 0px;
   top: 30px;
 }
 #contentSub .menu .box2 {
-  width: 100px;
-  height: 400px;
-  background: rgba(179, 215, 232, 0.8);
+  width: 300px;
+  height: 500px;
+  background: rgba(179, 215, 232, 0.6);
   position: absolute;
   right: 0px;
   top: 520px;
@@ -326,6 +326,13 @@ a {
   position: absolute;
   left: 170px;
   top: 80px;
+}
+#content .inner .wrap .pic .picCon1 {
+  transform: rotateX(0deg);
+}
+#content .inner .wrap .pic .picCon2 {
+  transform: rotateX(0deg);
+  opacity: 0;
 }
 #content .inner .wrap .txt {
   width: 450px;
@@ -902,6 +909,20 @@ a {
   left: 80px;
   opacity: 0.8;
 }
+#shop .inner #tab dd .prev img {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 47%;
+  left: 3%;
+}
+#shop .inner #tab dd .next img {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 47%;
+  left: 53%;
+}
 #shop .inner #tab dd .txt {
   width: 420px;
   height: 380px;
@@ -915,7 +936,7 @@ a {
   margin-bottom: 30px;
   color: #fff;
 }
-#shop .inner #tab dd .txt a {
+#shop .inner #tab dd .txt .btnShop {
   display: block;
   width: 140px;
   height: 30px;
@@ -925,7 +946,7 @@ a {
   font: 14px/1 "Kanit";
   color: #fff;
 }
-#shop .inner #tab dd .txt a:hover {
+#shop .inner #tab dd .txt .btnShop:hover {
   background: #fff;
   color: rgba(179, 215, 232, 0.7);
 }
