@@ -2,6 +2,10 @@
 @import "reset.scss";
 @import "sub.scss";
 @import "about.scss";
+@import "gallery.scss";
+@import "youtube.scss";
+@import "community.scss";
+@import "contact.scss";
 
 
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Kanit:wght@300&family=Sansita:ital@1&family=Secular+One&family=Shrikhand&family=Zilla+Slab:wght@300&display=swap');
@@ -516,24 +520,16 @@
                     p{
                         font: 15px/1.3 'Kanit'; color: #333; margin-top: 40px;
                     }
-                    // 대체 왜 버튼 글자색이 바뀌지 않는걸까ㅜㅜ
-                    .btnClose{
-                        position: absolute;
-                        top: 40px; right: 40px;
-                        font: normal 14px/1 'Kanit'; color: #333;
-                        cursor: pointer;
-                        
-                        // display: block;
-                        // position: absolute;
-                        // top: 40px; right: 40px;
-                        
-                        // span{
-                        //     font: normal 14px/1 'Kanit'; color: #333;
-                        // }
-                        
-                    }
                 }
-        
+                  
+                .btnClose{
+                    position: absolute;
+                    top: 40px; right: 40px;
+                    
+                    font: normal 14px/1 'Kanit'; color: #333;
+                    cursor: pointer;
+
+                }        
             }
         }
     }
