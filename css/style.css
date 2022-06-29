@@ -1044,7 +1044,7 @@ a {
   margin-left: 30px;
   margin-top: 30px;
   position: absolute;
-  top: 170px;
+  top: 250px;
   right: 30px;
   padding: 20px;
 }
@@ -1054,7 +1054,7 @@ a {
   margin-top: 10px;
 }
 #main .inner aside .inner .content p {
-  font: 10px/1.3 "Kanit";
+  font: 13px/1.3 "Kanit";
   color: #333;
   margin-top: 20px;
 }
