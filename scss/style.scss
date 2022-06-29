@@ -573,10 +573,37 @@
                 position: absolute; top: 50px;
                 background: rgba(179, 215, 232,0.7); text-align: center;
                 display: none; letter-spacing: 1px;
+                
+                .swiper{
+                    width: 100%; height: 100vh;
+                    margin: 0 auto; position: relative;
+                    top: -120px; left: -120px;
+                    .swiper-wrapper{
+                        width: 100%; height: 100%;
+                        .swiper-slide{
+                            width: 100%; height: 100%;
+                            >img{
+                                width: 480px; height: 380px;
+                                opacity: 1; object-fit: cover;
+                            }
+                        }
+                    }
+                    .swiper-pagination
+                    {
+                        position: absolute; top: 440px; left: 500px;
+                        padding: 20px;
+                        width: 40px; height: 40px;
+                        display: flex; flex-direction: row;
+                        color: #fff; line-height: 30px;
+                      
+                    }
+                }
+
                 img{
                     width: 480px; height: 380px; object-fit: cover;
                     position: absolute; top: 60px; left: 80px; opacity: 0.8;                
                 }
+
 
                 // .slider{
                 //     width: 480px; height: 380px;
@@ -592,27 +619,27 @@
 
 
                 // }
-                .prev{          
-                    img{
-                        width: 40px; height: 40px;
-                        position: absolute; top: 47%; left: 3%;
+                // .prev{          
+                //     img{
+                //         width: 40px; height: 40px;
+                //         position: absolute; top: 47%; left: 3%;
 
-                    }
-                }
+                //     }
+                // }
 
-                .next{                    
-                    img{
-                        width: 40px; height: 40px;
-                        position: absolute; top: 47%; left: 53%;
+                // .next{                    
+                //     img{
+                //         width: 40px; height: 40px;
+                //         position: absolute; top: 47%; left: 53%;
                     
-                    }
-                }
+                //     }
+                // }
                 
 
                 .txt{
                     width: 420px; height: 380px;
                     position: absolute; top: 80px; right: 50px;
-                    padding: 50px;
+                    padding: 50px; z-index: 3;
                     p{
                         font: 17px/1.4 'Kanit'; margin-bottom: 30px;
                         color: #fff;
@@ -672,6 +699,7 @@
             letter-spacing: 1px;
             font: 15px/1 'Kanit'; color: #fff;
             &:hover{
+                font-weight: bold;
                 color: rgb(255, 178, 62);
             }
         }

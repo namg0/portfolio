@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PORTFOLIO_NAM JIYOUNG</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/d6fb8a2856.js" crossorigin="anonymous"></script>
     <script defer src="js/anime.js"></script>
@@ -157,7 +159,51 @@
                     <a href="#">WHAT's NEW</a>
                 </dt>
                 <dd class="on">
-                    <div class="slider">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide box1"><img src="img/shop1.jpg" alt=""></div>
+                            <div class="swiper-slide box2"><img src="img/shop4.jpg" alt=""></div>
+                            <div class="swiper-slide box3"><img src="img/shop5.jpg" alt=""></div>
+                        </div>
+                
+                        <div class="swiper-pagination"></div>
+                    
+                        <!-- <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>   -->
+                    </div>
+
+                    <script>
+                        var swiper = new Swiper(".mySwiper", {
+                         effect: "fade",
+                         direction:"horizontal", 
+                         spaceBeteen:0,
+                         slidePerView:1, 
+                         grabCursor:true,
+                         loop:true, 
+                         autoplay:{ 
+                         delay:1500, 
+                         disableOnInteraction: false,           
+                         },
+                         pagination: {
+                          el: ".swiper-pagination",
+                          clickable: true,
+                          renderBullet: function (index, className) 
+                          {
+                             return '<span class="' + className + '">' + (index + 1) + "</span>";
+                          },
+                         },
+                        //  navigation: {
+                        //   nextEl: ".swiper-button-next",
+                        //   prevEl: ".swiper-button-prev",
+                        //  },
+                        //  mousewheel:true,
+                        //  keyborad:{
+                        //   enabled:true,
+                        //  },
+                        });
+                    </script>
+
+                    <!-- <div class="slider">
                         <ul>
                             <li data-index="1"><img src="img/shop1.jpg" alt=""></li>
                             <li data-index="2"><img src="img/shop4.jpg" alt=""></li>
@@ -169,7 +215,7 @@
                     </a>
                     <a href="#" class="next">
                         <img src="img/btnNext.png" alt="">
-                    </a>
+                    </a> -->
                     <div class="txt">
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta eaque perferendis illum sunt eos quam praesentium reiciendis?</p>
                         <a href="#" class="btnShop">SHOP NOW</a>
