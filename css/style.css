@@ -368,7 +368,110 @@ a {
 }
 #mainGallery .inner {
   width: 1180px;
-  height: 800px;
+  margin: 0 auto;
+  min-height: 800px;
+}
+#mainGallery .inner .wrap {
+  width: 100%;
+}
+#mainGallery .inner .wrap #searchBox {
+  width: 100%;
+  padding: 50px 60px 0px;
+  font-size: 0;
+  overflow: hidden;
+}
+#mainGallery .inner .wrap #searchBox #search {
+  width: 300px;
+  height: 30px;
+  border: 1px solid rgb(179, 215, 232);
+  padding-left: 10px;
+  font: 15px/1 "Kanit";
+}
+#mainGallery .inner .wrap #searchBox .btnSearch {
+  width: 80px;
+  height: 30px;
+  background: rgb(179, 215, 232);
+  font: bold 14px/20px "Kanit";
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  margin-left: 10px;
+  vertical-align: top;
+  border-color: rgb(179, 215, 232);
+  letter-spacing: 1px;
+}
+#mainGallery .inner .wrap .wrap {
+  width: 100%;
+  padding: 50px;
+  overflow: hidden;
+}
+#mainGallery .inner .wrap .wrap .loading {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 1s;
+  display: none;
+}
+#mainGallery .inner .wrap .wrap .loading.off {
+  opacity: 0;
+}
+#mainGallery .inner .wrap .wrap #list {
+  width: 100%;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: 1s;
+}
+#mainGallery .inner .wrap .wrap #list.on {
+  opacity: 1;
+  transform: translateY(0px);
+}
+#mainGallery .inner .wrap .wrap #list::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#mainGallery .inner .wrap .wrap #list li {
+  float: left;
+  width: 33.3333333333%;
+  padding: 10px;
+}
+#mainGallery .inner .wrap .wrap #list li div {
+  width: 100%;
+  padding: 20px;
+  box-shadow: 5px 5px 20px rgba(179, 215, 232, 0.6);
+  border-radius: 5px;
+}
+#mainGallery .inner .wrap .wrap #list li div a > img {
+  width: 100%;
+}
+#mainGallery .inner .wrap .wrap #list li div p {
+  font: 12px/1.2 "Kanit";
+  color: #333;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#mainGallery .inner .wrap aside {
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  padding: 5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#mainGallery .inner .wrap aside img {
+  height: 100%;
+}
+#mainGallery .inner .wrap aside span {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #fff;
+  cursor: pointer;
 }
 
 #mainYoutube {
@@ -430,6 +533,70 @@ a {
 #mainContact .inner {
   width: 1180px;
   height: 100%;
+}
+
+#join {
+  width: 100%;
+  padding: 150px 0;
+}
+#join .inner {
+  width: 1180px;
+  margin: 0 auto;
+}
+#join .inner h1 {
+  font: normal 60px/1 "Kanit";
+  color: #555;
+  margin-bottom: 50px;
+}
+#join .inner table {
+  border-top: 2px solid #333;
+  border-bottom: 2px solid #333;
+}
+#join .inner table th, #join .inner table td {
+  border-bottom: 1px solid #ddd;
+  padding: 15px 25px;
+}
+#join .inner table th {
+  width: 20%;
+}
+#join .inner table th input[type=reset], #join .inner table th input[type=submit] {
+  width: 30%;
+  height: 40px;
+  border: 1px solid #333;
+  margin: 10px;
+  font: bold 14px/40px "arial";
+  color: #555;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+#join .inner table th input[type=reset]:hover, #join .inner table th input[type=submit]:hover {
+  background: #333;
+  color: #fff;
+}
+#join .inner table td {
+  border-left: 1px solid #aaa;
+}
+#join .inner table td input[type=text], #join .inner table td input[type=password], #join .inner table td select {
+  width: 60%;
+  background: rgba(0, 0, 0, 0.03);
+  padding: 10px;
+  border: 1px solid #aaa;
+}
+#join .inner table td input[type=radio], #join .inner table td input[type=checkbox] {
+  margin-right: 30px;
+}
+#join .inner table td textarea {
+  resize: none;
+  width: 60%;
+  height: 150px;
+  background: rgba(0, 0, 0, 0.03);
+  border: 1px solid #aaa;
+}
+#join .inner table td p {
+  font: 11px/1 "맑은 고딕";
+  color: hotpink;
+  margin-top: 5px;
 }
 
 /* header 영역 */
@@ -1060,8 +1227,8 @@ a {
 }
 #main .inner aside .inner .btnClose {
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 15px;
+  right: 15px;
   font: normal 14px/1 "Kanit";
   color: #333;
   cursor: pointer;

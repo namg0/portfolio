@@ -6,6 +6,7 @@
 @import "youtube.scss";
 @import "community.scss";
 @import "contact.scss";
+@import "join.scss";
 
 
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Kanit:wght@300&family=Sansita:ital@1&family=Secular+One&family=Shrikhand&family=Zilla+Slab:wght@300&display=swap');
@@ -530,7 +531,7 @@
                   
                 .btnClose{
                     position: absolute;
-                    top: 20px; right: 20px;
+                    top: 15px; right: 15px;
                     
                     font: normal 14px/1 'Kanit'; color: #333;
                     cursor: pointer;

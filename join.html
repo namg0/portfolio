@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO_NAM JIYOUNG</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/d6fb8a2856.js" crossorigin="anonymous"></script>
+    <script defer src="js/join.js"></script>
+</head>
+<body>
+    <header id="header_sub">
+        <div class="inner">
+            <h1><a href="index.html">AEONIAN</a></h1>
+
+            <nav class="menuWeb">
+                <ul id="gnb">
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="youtube.html">YOUTUBE</a></li>
+                    <li><a href="community.html">COMMUNITY</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+
+                <div class="util">
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="join.html">Join</a></li>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- <section id="contentSub">
+        <div class="menu">
+                <div class="box1"></div>
+                
+                <h1>s</h1>      
+        </div>
+    </section> -->
+
+    <section id="join">
+        <div class="inner">
+            <h1>MEMBERSHIP</h1>
+            <form action="result.html" method="get" id="joinMem">
+                <fieldset>
+                    <legend class="hidden">회원가입 폼 입력방식</legend>
+
+                    <table>
+                        <caption class="hidden">회원가입을 위한 아이디, 비밀번호, 이메일. 성별, 학력, 취미, 남기는 말을 입력할 테이블</caption>
+
+                        <tbody>
+                            <!-- 유저아이디 -->
+                            <tr>
+                                <th scope="row"><label for="userid">USER ID</label></th>
+                                <td><input type="text" name="userid" id="userid" placeholder="아이디를 입력하세요" required></td>
+                            </tr>
+
+                            <!-- 패스워드 -->
+                            <tr>
+                                <th scope="row"><label for="pwd1">PASSWORD</label></th>
+                                <td><input type="password" name="pwd1" id="pwd1" placeholder="비밀번호를 입력하세요" required></td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><label for="pwd2">RE PASSWORD</label></th>
+                                <td><input type="password" name="pwd2" id="pwd2" placeholder="비밀번호를 재입력하세요" required></td>
+                            </tr>
+
+                            <!-- 이메일 -->
+                            <tr>
+                                <th scope="row"><label for="email">E-MAIL</label></th>
+                                <td><input type="text" name="email" id="email" placeholder="이메일 주소를 입력하세요" required></td>
+                            </tr>
+
+                            <!-- 최종학력 -->
+                            <tr>
+                                <th scope="row"><label for="edu">EDUCATION</label></th>
+                                <td>
+                                    <select name="edu" id="edu">
+                                        <option value="">최종학력을 선택해주세요</option>
+                                        <option value="elementary">초등학교 졸업</option>
+                                        <option value="middle">중학교 졸업</option>
+                                        <option value="high">고등학교 졸업</option>
+                                        <option value="college">대학교 졸업</option>
+                                    </select>
+                                </td>
+                            </tr>
+
+                            <!-- 성별 -->
+                            <tr>
+                                <th scope="row">GENDER</th>
+                                <td>
+                                    <label for="male">Male</label>
+                                    <input type="radio" name="gender" id="male" value="male">
+
+                                    <label for="male">Female</label>
+                                    <input type="radio" name="gender" id="female" value="female">
+                                </td>
+                            </tr>
+
+                            <!-- 관심사 -->
+                            <tr>
+                                <th scope="row">INTEREST</th>
+                                <td>
+                                    <label for="sports">Sports</label>
+                                    <input type="checkbox" name="hobby" id="sports" value="sports">
+
+                                    <label for="music">Music</label>
+                                    <input type="checkbox" name="hobby" id="music" value="music">
+
+                                    <label for="game">Game</label>
+                                    <input type="checkbox" name="hobby" id="game" value="game">
+
+                                    <label for="reading">Reading</label>
+                                    <input type="checkbox" name="hobby" id="reading" value="reading">
+                                </td>
+                            </tr>
+
+                            <!-- 코멘트 -->
+                            <tr>
+                                <th scope="row"><label for="comments">COMMENTS</label></th>
+                                <td>
+                                    <textarea name="comments" id="comments" placeholder="남기는 말을 입력하세요" required></textarea>
+                                </td>
+                            </tr>
+
+                            <!-- 버튼 -->
+                            <tr>
+                                <th colspan="2">
+                                    <input type="reset" value="cancle">
+                                    <input type="submit" value="submit">
+                                </th>
+                            </tr>
+                            
+                        </tbody>
+                </fieldset>
+            </form>            
+        </div>
+    </section>
+
+    <footer id="footer_sub">
+        <div class="inner">
+
+            <ul class="footerL">
+                <h1>AEONIAN</h1>
+                <div class="sns">            
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>    
+                <address>
+                    Address : 273, Ttukseom-ro, Seongdong-gu, Seoul, Republic of Korea
+                    <br>
+                    Tel : +82 21 0203 0210
+    
+                </address>
+            </ul>
+
+
+            <ul class="footerR">
+                <li><a href="#">Policy</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Custmer</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+
+            
+           
+            <p>Copyright &copy; 2022 AEONIAN ALL Right Reserved.</p>
+
+        </div>
+    </footer>
+
+    
+</body>
+</html>
