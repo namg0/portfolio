@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+#join{
+    width: 100%; height: 100%; margin: 0 auto;
+    background-color: #333;
+    .inner{
+        width: 1180px; height: 800px; margin: 0 auto; min-height: 800px; background-color: #ddd;
+        .wrap{
+            width: 100%; height: 100%; padding: 150px 0;
+            #joinP{
+                h1{
+                    font: normal 60px/1 'Kanit'; color: #555; margin-bottom: 50px;
+                }
+                table{
+                    border-top: 2px solid #333;
+                    border-bottom: 2px solid #333;
+        
+                    th,td{border-bottom: 1px solid #ddd; padding: 15px 25px;}
+        
+                    th{
+                        width: 20%;
+                        input[type=reset],input[type=submit]{
+                            width: 30%;height: 40px;
+                            border: 1px solid #333; margin: 10px;
+                            font: bold 14px/40px 'arial'; color: #555; letter-spacing: 2px;
+                            cursor: pointer; transition: 0.5s;
+                            &:hover{
+                                background: #333; color: #fff;
+                            }
+                        }
+                        
+                    }
+        
+                    td{
+                        border-left: 1px solid #aaa;
+        
+                        input[type=text],input[type=password],select{
+                            width: 60%; background: rgba(0,0,0,0.03);
+                            padding: 10px; border: 1px solid #aaa;
+                            
+                        }
+                        input[type=radio],input[type=checkbox]{
+                            margin-right: 30px;
+                        }
+                        textarea{
+                            resize: none;
+                            width: 60%; height: 150px;
+                            background: rgba(0,0,0,0.03);
+                            border: 1px solid #aaa;
+                        }
+        
+                        // 에러 메세지 스타일
+                        p{
+                            font: 11px/1 "맑은 고딕";
+                            color: hotpink; margin-top: 5px;
+                        }
+        
+                    }
+                }
+
+            }
+        }
+
+    } 
+}
+
