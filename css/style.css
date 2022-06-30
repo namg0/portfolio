@@ -214,6 +214,159 @@ a {
   color: #999;
 }
 
+#header_sub {
+  width: 100%;
+  height: 119px;
+  margin: 0 auto;
+  position: relative;
+  top: 0px;
+  background: #fff;
+  z-index: 10;
+}
+#header_sub .inner {
+  width: 1180px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+#header_sub .inner h1 {
+  position: absolute;
+  top: 17%;
+  left: 43%;
+  margin-top: 10px;
+}
+#header_sub .inner h1 a {
+  font: 40px/1 "Abril Fatface";
+  color: rgb(69, 70, 70);
+  letter-spacing: 2px;
+}
+#header_sub .inner #gnb {
+  position: absolute;
+  left: 34%;
+  top: 85px;
+  margin-top: 10px;
+}
+#header_sub .inner #gnb li {
+  float: left;
+}
+#header_sub .inner #gnb li a {
+  display: block;
+  padding: 7px 17px;
+  font: bold 10px/1 "Kanit";
+  color: rgb(179, 215, 232);
+}
+#header_sub .inner #gnb li a:hover {
+  background: rgb(179, 215, 232);
+  color: #fff;
+}
+#header_sub .inner .util {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+#header_sub .inner .util li {
+  float: left;
+  margin-left: 10px;
+}
+#header_sub .inner .util li a {
+  font: 10px/1 "Kanit";
+  color: #999;
+}
+#header_sub .inner .util li a:hover {
+  color: rgb(179, 215, 232);
+}
+
+/* sub_menu*/
+/* sub_main*/
+#utilMain .inner {
+  width: 1180px;
+  height: 900px;
+  margin: 0 auto;
+  position: relative;
+}
+#utilMain .inner .wrap {
+  width: 100%;
+  height: 100%;
+}
+
+/* footer 영역 */
+#footer_sub .inner {
+  width: 1180px;
+  height: 300px;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 70px;
+}
+#footer_sub .inner .footerL {
+  position: absolute;
+  top: 12%;
+  left: 5%;
+}
+#footer_sub .inner .footerL h1 {
+  color: rgb(179, 215, 232);
+  font: bold 38px/1 "Abril Fatface";
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+#footer_sub .inner .footerL .sns {
+  margin-bottom: 33px;
+}
+#footer_sub .inner .footerL .sns a {
+  margin-bottom: 20px;
+  text-align: center;
+  margin-left: 5px;
+}
+#footer_sub .inner .footerL .sns a i {
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  margin: 5px;
+  background: #999;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 20px;
+}
+#footer_sub .inner .footerL .sns a:hover i {
+  background: rgba(179, 215, 232, 0.7);
+}
+#footer_sub .inner .footerL address {
+  font: normal 13px/1.7 "Kanit";
+  padding: 10px;
+  color: #999;
+}
+#footer_sub .inner .footerR {
+  position: absolute;
+  top: 12%;
+  right: 5%;
+}
+#footer_sub .inner .footerR li {
+  float: left;
+  margin-right: 10px;
+}
+#footer_sub .inner .footerR li a {
+  font: bold 11px/1 "Kanit";
+  color: #999;
+}
+#footer_sub .inner::after {
+  display: block;
+  content: "";
+  position: absolute;
+  bottom: 13%;
+  right: 0%;
+  width: 1180px;
+  height: 3px;
+  background: rgba(179, 215, 232, 0.7);
+}
+#footer_sub .inner p {
+  position: absolute;
+  bottom: 5%;
+  left: 38%;
+  font: 12px/1 "arial";
+  color: #999;
+}
+
 #contentSub {
   margin-bottom: 300px;
 }
@@ -535,142 +688,15 @@ a {
   height: 100%;
 }
 
-#join {
-  width: 100%;
-  padding: 150px 0;
-}
-#join .inner {
+#utilJoin .inner {
   width: 1180px;
+  height: 900px;
   margin: 0 auto;
+  position: relative;
 }
-#join .inner h1 {
-  font: normal 60px/1 "Kanit";
-  color: #555;
-  margin-bottom: 50px;
-}
-#join .inner table {
-  border-top: 2px solid #333;
-  border-bottom: 2px solid #333;
-}
-#join .inner table th, #join .inner table td {
-  border-bottom: 1px solid #ddd;
-  padding: 15px 25px;
-}
-#join .inner table th {
-  width: 20%;
-}
-#join .inner table th input[type=reset], #join .inner table th input[type=submit] {
-  width: 30%;
-  height: 40px;
-  border: 1px solid #333;
-  margin: 10px;
-  font: bold 14px/40px "arial";
-  color: #555;
-  letter-spacing: 2px;
-  cursor: pointer;
-  transition: 0.5s;
-}
-#join .inner table th input[type=reset]:hover, #join .inner table th input[type=submit]:hover {
-  background: #333;
-  color: #fff;
-}
-#join .inner table td {
-  border-left: 1px solid #aaa;
-}
-#join .inner table td input[type=text], #join .inner table td input[type=password], #join .inner table td select {
-  width: 60%;
-  background: rgba(0, 0, 0, 0.03);
-  padding: 10px;
-  border: 1px solid #aaa;
-}
-#join .inner table td input[type=radio], #join .inner table td input[type=checkbox] {
-  margin-right: 30px;
-}
-#join .inner table td textarea {
-  resize: none;
-  width: 60%;
-  height: 150px;
-  background: rgba(0, 0, 0, 0.03);
-  border: 1px solid #aaa;
-}
-#join .inner table td p {
-  font: 11px/1 "맑은 고딕";
-  color: hotpink;
-  margin-top: 5px;
-}
-
-#join {
+#utilJoin .inner .wrap {
   width: 100%;
   height: 100%;
-  margin: 0 auto;
-  background-color: #333;
-}
-#join .inner {
-  width: 1180px;
-  height: 800px;
-  margin: 0 auto;
-  min-height: 800px;
-  background-color: #ddd;
-}
-#join .inner .wrap {
-  width: 100%;
-  height: 100%;
-  padding: 150px 0;
-}
-#join .inner .wrap #joinP h1 {
-  font: normal 60px/1 "Kanit";
-  color: #555;
-  margin-bottom: 50px;
-}
-#join .inner .wrap #joinP table {
-  border-top: 2px solid #333;
-  border-bottom: 2px solid #333;
-}
-#join .inner .wrap #joinP table th, #join .inner .wrap #joinP table td {
-  border-bottom: 1px solid #ddd;
-  padding: 15px 25px;
-}
-#join .inner .wrap #joinP table th {
-  width: 20%;
-}
-#join .inner .wrap #joinP table th input[type=reset], #join .inner .wrap #joinP table th input[type=submit] {
-  width: 30%;
-  height: 40px;
-  border: 1px solid #333;
-  margin: 10px;
-  font: bold 14px/40px "arial";
-  color: #555;
-  letter-spacing: 2px;
-  cursor: pointer;
-  transition: 0.5s;
-}
-#join .inner .wrap #joinP table th input[type=reset]:hover, #join .inner .wrap #joinP table th input[type=submit]:hover {
-  background: #333;
-  color: #fff;
-}
-#join .inner .wrap #joinP table td {
-  border-left: 1px solid #aaa;
-}
-#join .inner .wrap #joinP table td input[type=text], #join .inner .wrap #joinP table td input[type=password], #join .inner .wrap #joinP table td select {
-  width: 60%;
-  background: rgba(0, 0, 0, 0.03);
-  padding: 10px;
-  border: 1px solid #aaa;
-}
-#join .inner .wrap #joinP table td input[type=radio], #join .inner .wrap #joinP table td input[type=checkbox] {
-  margin-right: 30px;
-}
-#join .inner .wrap #joinP table td textarea {
-  resize: none;
-  width: 60%;
-  height: 150px;
-  background: rgba(0, 0, 0, 0.03);
-  border: 1px solid #aaa;
-}
-#join .inner .wrap #joinP table td p {
-  font: 11px/1 "맑은 고딕";
-  color: hotpink;
-  margin-top: 5px;
 }
 
 /* header 영역 */
