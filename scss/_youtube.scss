@@ -3,6 +3,21 @@
     background: rgba(229, 241, 248, 0.4);
     .inner{
         width: 1180px; height: 100%;
+        position: relative; margin: 0 auto;
+        
+        .youtubeBox{
+            position: absolute;
+            float: left;
+            
+            // article{
+            //     width: 350px; height: 200px;
+            //     background: #fff;
+                
+                 
+                
+                
+            // }
+        }
 
     }
 }
