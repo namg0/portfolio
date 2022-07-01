@@ -1,59 +1,95 @@
-// @charset "UTF-8";
-
-// #join{
-//     width: 100%; padding: 150px 0; background: #aaa;
-//     .inner{
-//         width: 1180px; margin: 0 auto; background: #fff;
-
-//         h1{
-//             font: normal 60px/1 'Kanit'; color: #555; margin-bottom: 50px;
-//         }
-//         table{
-//             border-top: 2px solid #333;
-//             border-bottom: 2px solid #333;
-
-//             th,td{border-bottom: 1px solid #ddd; padding: 15px 25px;}
-
-//             th{
-//                 width: 20%;
-//                 input[type=reset],input[type=submit]{
-//                     width: 30%;height: 40px;
-//                     border: 1px solid #333; margin: 10px;
-//                     font: bold 14px/40px 'arial'; color: #555; letter-spacing: 2px;
-//                     cursor: pointer; transition: 0.5s;
-//                     &:hover{
-//                         background: #333; color: #fff;
-//                     }
-//                 }
+#utilJoin{
+    width: 100%; height: 100%; margin-top: 50px;
+    background: url(../img/join1.jpg); object-fit: cover; overflow: hidden; opacity: 0.7;
+    .inner{
+        width: 1180px; height: 750px; 
+        margin: 0 auto; margin-top: 70px;
+        position: relative; padding: 50px 0;
+        
+        &::before{
+            content: ''; display: block;
+            position: absolute; top: 20px; left: 20%;
+            width: 700px; height: 630px;
+            background: rgba(0,0,0,0.3);
+            border-radius: 5px;
+            
+        }
+        .wrap{
+            width: 100%; height: 100%;
+            .join{
                 
-//             }
-
-//             td{
-//                 border-left: 1px solid #aaa;
-
-//                 input[type=text],input[type=password],select{
-//                     width: 60%; background: rgba(0,0,0,0.03);
-//                     padding: 10px; border: 1px solid #aaa;
+                
+                h1{
+                    font: bold 60px/1 'Kanit';
+                    color: #fff;
+                    position: absolute; left: 26%; top: 6%;
+                    letter-spacing: 2px;
                     
-//                 }
-//                 input[type=radio],input[type=checkbox]{
-//                     margin-right: 30px;
-//                 }
-//                 textarea{
-//                     resize: none;
-//                     width: 60%; height: 150px;
-//                     background: rgba(0,0,0,0.03);
-//                     border: 1px solid #aaa;
-//                 }
+                }
 
-//                 // 에러 메세지 스타일
-//                 p{
-//                     font: 11px/1 "맑은 고딕";
-//                     color: hotpink; margin-top: 5px;
-//                 }
+                fieldset{
+                    border-style: none;
+                }
 
-//             }
-//         }
-//     } 
-// }
+                table{
+                    border-top: 2px solid #fff;
+                    border-bottom: 2px solid #fff;
+                    position: absolute; left: 32%; top: 16%;
+                    padding: 10px;
 
+                    th,td{border-bottom: 1px solid rgb(174, 194, 203); color: #fff; padding: 8px;}
+
+                    th{
+                        font: bold 18px/1 'Kanit';
+                        &:last-of-type{
+                            border-bottom: none;
+                        }
+                        
+                        input[type=reset],input[type=submit]{
+                            width: 30%; height: 30px; 
+                            border: 1px solid rgba(255,255,255,0.6);
+                            background: rgba(255,255,255,0.6);
+                            color: rgb(76, 115, 133);
+                            margin-left: 10px; margin-top: 20px;
+                            cursor: pointer; transition: 0.5s;
+                            &:hover{
+                                background: rgb(103, 146, 165); color: #fff;
+                            }
+                            
+                            
+                        }
+                    }
+
+                    td{
+                        font: normal 15px/1 'Kanit'; letter-spacing: 1px;
+                        input[type=text],input[type=password],select{
+                            width: 90%; background: rgba(255,255,255,0.6); color: rgb(76, 115, 133); border-color: rgba(255,255,255,0.6); padding: 5px;
+                        }
+                        input[type=radio],input[type=checkbox]{
+                            margin-right: 8px;
+                            
+                        }
+
+                        textarea{
+                            resize: none;
+                            width: 100%; height: 60px;
+                            order: 1px solid rgba(255,255,255,0.6);
+                            background: rgba(255,255,255,0.6);
+                            padding: 18px;
+                        }
+
+                        p{
+                            font: 11px/1 "맑은 고딕";
+                            color: orange; margin-top: 5px;
+                        }
+
+                        
+                    }
+                    
+                }
+            }
+            
+        }
+    }
+
+}

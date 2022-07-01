@@ -28,6 +28,22 @@
     width: 100%; height: 800px;
     .inner{
         width: 1180px; height: 100%;
+        position: absolute;
+
+        .contact{
+            width: 100%; height: 100%;
+            position: absolute; top: 25%; left: 27%;
+
+            #map{
+                width: 800px; height: 600px;
+                background: rgb(237, 246, 252);
+            }
+
+            &::after{content: ''; display: block; clear: both;}
+
+            
+
+        }
 
     }
 }

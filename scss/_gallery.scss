@@ -17,11 +17,13 @@
     width: 100%; height: 100%; margin: 0 auto;
     .inner{
         width: 1180px; margin: 0 auto; min-height: 800px;
+        overflow: hidden;
         .wrap{
-            width: 100%;
+            width: 100%; position: relative;
             #searchBox{
                 width: 100%; padding: 50px 60px 0px; font-size: 0;
-                overflow: hidden;
+                position: absolute; left: 60%;
+                 
                 #search{
                     width: 300px; height: 30px;
                     border: 1px solid rgb(179, 215, 232);

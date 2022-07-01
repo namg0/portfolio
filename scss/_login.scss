@@ -1,0 +1,97 @@
+#utilLogin{
+    width: 100%; height: 100%; margin-top: 50px;
+    background: rgba(229, 241, 248, 0.4);
+    
+    .inner{
+        width: 1180px; height: 750px; 
+        margin: 0 auto; margin-top: 70px;
+        position: relative; padding: 50px 0;
+        overflow: hidden; padding-top: 10vh;
+
+        .loginTojoin{
+            width: 80%; height: 380px;
+            background: rgb(179, 215, 232);
+            border-radius: 10px;
+            position: absolute; top: 23%; left: 10%;
+            text-align: right; padding: 50px;
+            
+                h1{
+                    font: bold 18px/1 'Kanit';
+                    color: #fff; margin-bottom: 10px;
+                    position: absolute;
+                    top: 30%; right: 7%; 
+                    letter-spacing: 1px;
+                }
+                p{
+                    font: 15px/1.1 'Kanit';
+                    color: #fff; margin-bottom: 10px;
+                    position: absolute;
+                    top: 40%; right: 4%;
+                    text-align: center;
+                    letter-spacing: 1px;
+
+                }
+                a{
+                    display: block;
+                    position: absolute;
+                    bottom: 27%; right: 14%;
+                    font: 22px/1.3 'Kanit';
+                    color: #fff;
+                    border: 2px solid #fff;
+                    width: 150px; height: 35px;
+                    text-align: center;
+                    transform: 0.5s;
+                    letter-spacing: 2px;
+                    &:hover{
+                        color: rgb(179, 215, 232);
+                        background: #fff;
+                    }
+                }
+            
+            
+        }
+
+        .loginInfo{
+            width: 40%; height: 500px;
+            background: #fff;
+            border-radius: 10px;
+            position: absolute; top: 15%; left: 15%;
+            text-align: center; 
+            h1{
+                font: bold 25px/1 'Kanit';
+                    color: rgb(179, 215, 232); margin-bottom: 10px;
+                    position: absolute;
+                    top: 20%; left: 16%;
+                    letter-spacing: 1px;
+            }
+            .loginBox{
+                position: absolute; top: 35%;
+                left: 21%; 
+            }
+                .inputBox{
+                    input{
+                        width: 270px; height: 40px;
+                        padding: 20px; margin-bottom: 10px; border: 1px solid rgb(179, 215, 232); 
+                    }
+                }
+                a{
+                    display: block;
+                    position: absolute;
+                    top: 150px; left: 16%;
+                    font: 29px/1.7 'Kanit';
+                    color: #fff;
+                    background: rgb(179, 215, 232);
+                    width: 180px; height: 50px;
+                    text-align: center;
+                    transform: 0.5s;
+                    letter-spacing: 2px;
+                    &:hover{
+                        color: #fff;
+                        background: rgb(238, 228, 181);
+                    }
+                }
+
+            
+        }
+    }
+}
