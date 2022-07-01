@@ -212,8 +212,8 @@ a {
   display: none;
 }
 #footer_sub .inner .footerLetter > .inner h1 {
-  font: bold 30px/1 "Kanit";
-  margin-bottom: 18px;
+  font: bold 27px/1 "Kanit";
+  margin-bottom: 15px;
   color: #999;
 }
 #footer_sub .inner .footerLetter > .inner > input {
@@ -409,8 +409,8 @@ a {
   display: none;
 }
 #footer_sub .inner .footerLetter > .inner h1 {
-  font: bold 30px/1 "Kanit";
-  margin-bottom: 18px;
+  font: bold 27px/1 "Kanit";
+  margin-bottom: 15px;
   color: #999;
 }
 #footer_sub .inner .footerLetter > .inner > input {
@@ -466,10 +466,13 @@ a {
   background: rgba(229, 241, 248, 0.4);
   position: relative;
   border-radius: 1%;
+  padding: 30px;
 }
 #mainAbout .inner #member {
   width: 100%;
-  padding: 30px 0px;
+  margin: 0 auto;
+  margin-left: 30px;
+  margin-bottom: 70px;
 }
 #mainAbout .inner #member h1 {
   font: bold 50px/1 "Kanit";
@@ -505,7 +508,7 @@ a {
   opacity: 1;
 }
 #mainAbout .inner #member .wrap .team article {
-  width: 280px;
+  width: 250px;
   float: left;
   position: relative;
   left: 2.5%;
@@ -532,7 +535,7 @@ a {
   color: #fff;
 }
 #mainAbout .inner #member .wrap .team .txt h2 {
-  font: bold 45px/1 "Kanit";
+  font: bold 38px/1 "Kanit";
   letter-spacing: 1px;
   position: absolute;
   top: 45%;
@@ -850,17 +853,49 @@ a {
   height: 100%;
   position: absolute;
   top: 25%;
-  left: 27%;
+  left: 31%;
 }
 #mainContact .inner .contact #map {
   width: 800px;
   height: 600px;
-  background: rgb(237, 246, 252);
+  background: #fff;
 }
 #mainContact .inner .contact::after {
   content: "";
   display: block;
   clear: both;
+}
+#mainContact .inner .contact .traffic {
+  float: left;
+  margin-top: 20px;
+}
+#mainContact .inner .contact .traffic li {
+  float: left;
+  margin-right: 20px;
+}
+#mainContact .inner .contact .traffic li a {
+  display: block;
+  width: 200px;
+  height: 40px;
+  background: #555;
+  font: bold 12px/40px "맑은 고딕";
+  color: #fff;
+  border: 1px solid #555;
+  text-align: center;
+}
+#mainContact .inner .contact .traffic li.on a {
+  background: #fff;
+  color: #333;
+}
+
+#mainContact2 {
+  width: 100%;
+  height: 800px;
+}
+#mainContact2 .inner {
+  width: 1180px;
+  height: 100%;
+  position: absolute;
 }
 
 #utilJoin {
@@ -1970,8 +2005,8 @@ footer .inner .footerLetter > .inner::after {
   display: none;
 }
 footer .inner .footerLetter > .inner h1 {
-  font: bold 30px/1 "Kanit";
-  margin-bottom: 18px;
+  font: bold 27px/1 "Kanit";
+  margin-bottom: 15px;
   color: #999;
 }
 footer .inner .footerLetter > .inner > input {
