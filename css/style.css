@@ -721,20 +721,102 @@ a {
   cursor: pointer;
 }
 
-#mainYoutube {
+#mainCollection {
   width: 100%;
   height: 800px;
-  background: rgba(229, 241, 248, 0.4);
+  margin-top: 20%;
 }
-#mainYoutube .inner {
+#mainCollection .inner {
   width: 1180px;
   height: 100%;
   position: relative;
   margin: 0 auto;
 }
-#mainYoutube .inner .youtubeBox {
+#mainCollection .inner .vidList {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#mainCollection .inner .vidList article {
+  width: 25%;
+  height: 800px;
+  margin-left: 20px;
+  padding: 10px 0px 0px 12px;
+  border: 2px solid rgb(179, 215, 232);
+  transition: 0.5s;
+}
+#mainCollection .inner .vidList article .pic {
+  display: block;
+  width: 95%;
+  height: 40%;
+  margin-top: 20%;
+}
+#mainCollection .inner .vidList article .pic > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(80%);
+}
+#mainCollection .inner .vidList article .con {
+  width: 90%;
+  height: 50%;
+  padding: 10px;
+  margin-top: 60%;
+}
+#mainCollection .inner .vidList article .con h2 {
+  font: bold 20px/1.2 "Kanit";
+  color: #333;
+  margin-bottom: 13px;
+  letter-spacing: 1px;
+}
+#mainCollection .inner .vidList article .con p {
+  font: 13px/1.3 "Kanit";
+  color: #333;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+}
+#mainCollection .inner .vidList article .con span {
+  font: bold 15px/1 "Kanit";
+  color: rgb(151, 184, 198);
+}
+#mainCollection .inner .vidList article:hover {
+  border: 0px;
+  background: rgb(179, 215, 232);
+}
+#mainCollection .inner .vidList article:hover .pic > img {
+  filter: grayscale(0%);
+}
+#mainCollection .inner .vidList article:hover h2, #mainCollection .inner .vidList article:hover p {
+  color: #fff;
+}
+#mainCollection .inner .vidList article:hover span {
+  color: rgb(103, 142, 160);
+}
+#mainCollection .inner figure.pop {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background: rgba(0, 0, 0, 0.7);
+  overflow: hidden;
+  padding: 6vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#mainCollection .inner figure.pop .btnClose {
   position: absolute;
-  float: left;
+  top: 50px;
+  right: 70px;
+  color: rgb(153, 191, 213);
+  cursor: pointer;
+  font: bold 20px/1 "Kanit";
+  letter-spacing: 1px;
+}
+#mainCollection .inner figure.pop .btnClose:hover {
+  color: rgb(255, 255, 255);
 }
 
 #mainCommunity {

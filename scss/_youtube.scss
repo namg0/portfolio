@@ -1,23 +1,91 @@
-#mainYoutube{
-    width: 100%; height: 800px;
-    background: rgba(229, 241, 248, 0.4);
+#mainCollection{
+    width: 100%; height: 800px; margin-top: 20%;
+    // background: rgba(229, 241, 248, 0.4);
+    
+    
     .inner{
         width: 1180px; height: 100%;
         position: relative; margin: 0 auto;
-        
-        .youtubeBox{
-            position: absolute;
-            float: left;
-            
-            // article{
-            //     width: 350px; height: 200px;
-            //     background: #fff;
-                
-                 
-                
-                
-            // }
+
+        .vidList{
+            width: 100%; display: flex; 
+            justify-content: space-between;
+            align-items:center;
+                        
+            article{
+                width: 25%; height: 800px;
+                margin-left: 20px; padding: 10px 0px 0px 12px;
+                border: 2px solid rgb(179, 215, 232);
+                transition: 0.5s;
+                               
+                .pic{
+                    display: block;
+                    width: 95%; height: 40%;
+                    margin-top: 20%;
+                    >img{
+                        width: 100%; height: 100%; object-fit: cover;
+                        filter: grayscale(80%);
+                    }
+                }
+
+                .con{
+                    width: 90%; height: 50%; padding: 10px;
+                    margin-top: 60%;
+                    h2{
+                        font: bold 20px/1.2 'Kanit';
+                        color: #333; margin-bottom: 13px;
+                        letter-spacing: 1px;
+                    }
+                    p{
+                        font: 13px/1.3 'Kanit';
+                        color: #333; margin-bottom: 40px;
+                        letter-spacing: 1px;
+                    }
+                    span{
+                        font: bold 15px/1 'Kanit';
+                        color: rgb(151, 184, 198);
+                    }
+                    //color: rgb(76, 115, 133)
+
+                }
+
+                &:hover{
+                    border: 0px;
+                    background: rgb(179, 215, 232);
+                    .pic>img{
+                        filter: grayscale(0%);
+                    }
+                    h2,p{
+                        color: #fff;
+                    }
+                    span{
+                        color: rgb(103, 142, 160);
+                    }
+
+                }
+            }
+
         }
+
+        figure.pop{
+            width: 100%; height: 100vh;
+            position: fixed; top: 0px; left: 0px;
+            background: rgba(0,0,0,0.7);
+            overflow: hidden;
+            padding: 6vw;
+            display: flex; justify-content: center; align-items: center;
+
+            .btnClose{
+                position: absolute; top: 50px; right: 70px; color: rgb(153, 191, 213);
+                cursor: pointer;
+                font: bold 20px/1 'Kanit'; letter-spacing: 1px;
+                &:hover{
+                    color: rgb(255, 255, 255);
+                }
+            }
+        }
+        
+       
 
     }
 }
