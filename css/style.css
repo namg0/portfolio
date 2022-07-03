@@ -992,8 +992,7 @@ aside span:hover {
   margin-top: 100px;
   width: 840px;
   height: 640px;
-  background: rgb(237, 244, 250);
-  border: 0px solid rgba(179, 215, 232, 0.6);
+  background: rgb(244, 249, 252);
   position: absolute;
   border-radius: 10px;
 }
@@ -1016,7 +1015,7 @@ aside span:hover {
   position: absolute;
   left: 70%;
   top: 32%;
-  background: rgb(237, 244, 250);
+  background: rgb(244, 249, 252);
   border-radius: 10px;
   padding: 30px;
   width: 30px;
