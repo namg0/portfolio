@@ -69,7 +69,7 @@ vidList.addEventListener("click",(e)=>{
     vidList.append(pop);
 });
 
-//이벤트의 발생하는 시점 : pop이 만들어져서 전체화면에 iframe이 펼쳐져 있는 상태.
+
 vidList.addEventListener("click",(e)=>{
     const pop = vidList.querySelector(".pop");
     if(pop){

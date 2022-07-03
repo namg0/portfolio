@@ -647,56 +647,54 @@ a {
   border-color: rgb(179, 215, 232);
   letter-spacing: 1px;
 }
-#mainGallery .inner .wrap .wrap {
+#mainGallery .inner .wrap #wrap {
   width: 100%;
   padding: 50px;
   overflow: hidden;
 }
-#mainGallery .inner .wrap .wrap .loading {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+#mainGallery .inner .wrap #wrap .loading {
+  width: 100px;
+  top: 100px;
+  left: 100px;
   transition: 1s;
-  display: none;
 }
-#mainGallery .inner .wrap .wrap .loading.off {
+#mainGallery .inner .wrap #wrap .loading.off {
   opacity: 0;
 }
-#mainGallery .inner .wrap .wrap #list {
-  width: 100%;
+#mainGallery .inner .wrap #wrap #list {
   opacity: 0;
   transform: translateY(100px);
   transition: 1s;
 }
-#mainGallery .inner .wrap .wrap #list.on {
-  opacity: 1;
-  transform: translateY(0px);
-}
-#mainGallery .inner .wrap .wrap #list::after {
+#mainGallery .inner .wrap #wrap #list::after {
   content: "";
   display: block;
   clear: both;
 }
-#mainGallery .inner .wrap .wrap #list li {
+#mainGallery .inner .wrap #wrap #list li {
   float: left;
-  width: 33.3333333333%;
+  width: 25%;
   padding: 10px;
 }
-#mainGallery .inner .wrap .wrap #list li div {
+#mainGallery .inner .wrap #wrap #list li div {
   width: 100%;
   padding: 20px;
-  box-shadow: 5px 5px 20px rgba(179, 215, 232, 0.6);
+  background: rgb(255, 255, 255);
+  box-shadow: 5px 5px 10px rgba(123, 185, 244, 0.3);
   border-radius: 5px;
 }
-#mainGallery .inner .wrap .wrap #list li div a > img {
+#mainGallery .inner .wrap #wrap #list li div a > img {
   width: 100%;
 }
-#mainGallery .inner .wrap .wrap #list li div p {
+#mainGallery .inner .wrap #wrap #list li div p {
   font: 12px/1.2 "Kanit";
   color: #333;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+#mainGallery .inner .wrap #wrap #list.on {
+  opacity: 1;
+  transform: translateY(0px);
 }
 #mainGallery .inner .wrap aside {
   width: 100%;

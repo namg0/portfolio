@@ -35,31 +35,29 @@
                     font: bold 14px/20px 'Kanit'; color: #fff; text-align: center; cursor: pointer; margin-left: 10px; vertical-align: top; border-color: rgb(179, 215, 232); letter-spacing: 1px;
                 }
             }
-            .wrap{
+            #wrap{
                 width: 100%; padding: 50px; overflow: hidden;
+                
                 .loading{
-                    position: fixed;
-                    top: 50%; left: 50%;
-                    transform: translate(-50%,-50%);
+                    width: 100px;
+                    top: 100px; left: 100px;
+                    // transform: translate(-50%,-50%);
                     transition: 1s;
-                    display: none;
                     &.off{
                         opacity: 0;
                     }
                 }
                 #list{
-                    width: 100%;
+                    
                     opacity: 0; transform: translateY(100px); transition: 1s;
-                    &.on{
-                        opacity: 1; transform: translateY(0px);
-                    }
+                    
                     &::after{
                         content: ''; display: block; clear: both;
                     }
                     li{
-                        float: left; width: calc(100% / 3); padding: 10px;
+                        float: left; width: calc(100% / 4); padding: 10px;
                         div{
-                            width: 100%; padding: 20px; box-shadow: 5px 5px 20px rgba(179, 215, 232,0.6); border-radius: 5px;
+                            width: 100%; padding: 20px; background: rgb(255, 255, 255); box-shadow: 5px 5px 10px rgba(123, 185, 244, 0.3); border-radius: 5px;
                             a{
                                 >img{
                                     width: 100%; 
@@ -68,19 +66,14 @@
                             p{
                                 font: 12px/1.2 'Kanit'; color: #333; margin-top: 10px; margin-bottom: 10px;
                             }
-                            // span{
-                            //     display: flex; align-items: center; margin-top: 10px;
-                            //     >img{
-                            //         width: 20px; height: 20px; border-radius: 50%; margin-right: 10px;
-                            //     }
-                            //     strong{
-                            //         font: 11px/1 'Kanit';
-                            //         color: rgb(179, 215, 232);
-                            //     }
-                            // }
                         }
                     }
-                } 
+                    &.on{
+                        opacity: 1; transform: translateY(0px);
+                    } 
+
+                }
+                
                 
             }
             aside{
