@@ -25,39 +25,99 @@
 }
 
 #mainContact{
-    width: 100%; height: 800px;
+    width: 100%; height: 750px;
     .inner{
+        margin: 0 auto;
         width: 1180px; height: 100%;
-        position: absolute;
+        position: relative; overflow: hidden;
+        margin-top: 15%;
 
         .contact{
             width: 100%; height: 100%;
-            position: absolute; top: 25%; left: 31%;
+            position: absolute; top: 0%; left: 11%;
+            
+            
+
+            .mapBox{
+                margin-top: 100px;
+                width: 840px; height: 640px;
+                background: rgb(237, 244, 250);
+                border: 0px solid rgba(179, 215, 232,0.6);
+                position: absolute; 
+                border-radius: 10px;
+            }
 
             #map{
+                margin-top: 100px;
                 width: 800px; height: 600px;
-                background: #fff;
+                position: absolute;
+                left: 1.7%; top: 2.5%;
+                border-radius: 10px;
+                filter: grayscale(30%);
+                
             }
 
             &::after{content: ''; display: block; clear: both;}
 
-            .traffic{
-                float: left; margin-top: 20px;
-                li{
-                    float: left; margin-right: 20px;
-                    a{
-                        display: block;
-                        width: 200px; height: 40px; background: #555;
-                        font: bold 12px/40px '맑은 고딕'; color: #fff;
-                        border: 1px solid #555;
-                        text-align: center;
+            .addrssCon{
+                position: absolute;
+                left: 70%;top: 32%;
+                background: rgb(237, 244, 250);
+                border-radius: 10px;
+                padding: 30px;
+                width: 30px; height: 370px;
+                color: rgb(103, 142, 160);
+                letter-spacing: 1px;
+                z-index: 10; transition: 0s;
+
+                h1{
+                    font: bold 30px/1 'Abril Fatface';
+                    margin-bottom: 5px;
+                    letter-spacing: 4px;
+                    transform: rotate(90deg);
+                    position: absolute;
+                    top: 45%; left: -87%;
+                    
+                    
+
+                }
+                
+                span{
+                   
+                    font: bold 20px/1.7 'Kanit';
+                    opacity: 0;
+                }
+
+                p{
+                    font: 15px/1.2 'Kanit';
+                    margin-bottom: 20px;
+                    opacity: 0;
+
+                }
+
+                &:hover{
+                    color: #fff;
+                    background: rgb(179, 215, 232);
+                    left: 57%;top: 32%;
+                    width: 280px;
+                    
+                    h1{
+                        top: 80%; left: 21%;
+                        transform: rotate(0deg);
+                        
+
                     }
-        
-                    &.on a{
-                        background: #fff; color: #333;
+                    span, p{
+                        opacity: 1;
                     }
+                  
+
                 }
             }
+        
+
+            
+            
 
             
 
