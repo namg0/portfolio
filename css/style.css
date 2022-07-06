@@ -1120,10 +1120,13 @@ aside span:hover {
   top: 16%;
   padding: 10px;
 }
-#utilJoin .inner .wrap .join table th, #utilJoin .inner .wrap .join table td {
+#utilJoin .inner .wrap .join table th,
+#utilJoin .inner .wrap .join table td {
+  font-family: "Kanit";
   border-bottom: 1px solid rgb(174, 194, 203);
   color: #fff;
   padding: 8px;
+  letter-spacing: 1px;
 }
 #utilJoin .inner .wrap .join table th {
   font: bold 18px/1 "Kanit";
@@ -1131,18 +1134,22 @@ aside span:hover {
 #utilJoin .inner .wrap .join table th:last-of-type {
   border-bottom: none;
 }
-#utilJoin .inner .wrap .join table th input[type=reset], #utilJoin .inner .wrap .join table th input[type=submit] {
+#utilJoin .inner .wrap .join table th input[type=reset],
+#utilJoin .inner .wrap .join table th input[type=submit] {
   width: 30%;
   height: 30px;
   border: 1px solid rgba(255, 255, 255, 0.6);
   background: rgba(255, 255, 255, 0.6);
   color: rgb(76, 115, 133);
-  margin-left: 10px;
-  margin-top: 20px;
+  margin-left: 20px;
+  margin-top: 10px;
   cursor: pointer;
   transition: 0.5s;
+  letter-spacing: 1px;
+  font: bold 17px/1 "Kanit";
 }
-#utilJoin .inner .wrap .join table th input[type=reset]:hover, #utilJoin .inner .wrap .join table th input[type=submit]:hover {
+#utilJoin .inner .wrap .join table th input[type=reset]:hover,
+#utilJoin .inner .wrap .join table th input[type=submit]:hover {
   background: rgb(103, 146, 165);
   color: #fff;
 }
@@ -1150,15 +1157,20 @@ aside span:hover {
   font: normal 15px/1 "Kanit";
   letter-spacing: 1px;
 }
-#utilJoin .inner .wrap .join table td input[type=text], #utilJoin .inner .wrap .join table td input[type=password], #utilJoin .inner .wrap .join table td select {
+#utilJoin .inner .wrap .join table td input[type=text],
+#utilJoin .inner .wrap .join table td input[type=password],
+#utilJoin .inner .wrap .join table td select {
   width: 90%;
   background: rgba(255, 255, 255, 0.6);
   color: rgb(76, 115, 133);
   border-color: rgba(255, 255, 255, 0.6);
   padding: 5px;
+  font-family: "Kanit";
 }
-#utilJoin .inner .wrap .join table td input[type=radio], #utilJoin .inner .wrap .join table td input[type=checkbox] {
+#utilJoin .inner .wrap .join table td input[type=radio],
+#utilJoin .inner .wrap .join table td input[type=checkbox] {
   margin-right: 8px;
+  font-family: "Kanit";
 }
 #utilJoin .inner .wrap .join table td textarea {
   resize: none;
@@ -1167,6 +1179,9 @@ aside span:hover {
   order: 1px solid rgba(255, 255, 255, 0.6);
   background: rgba(255, 255, 255, 0.6);
   padding: 18px;
+  font-family: "Kanit";
+  color: rgb(76, 115, 133);
+  letter-spacing: 1px;
 }
 #utilJoin .inner .wrap .join table td p {
   font: 11px/1 "맑은 고딕";

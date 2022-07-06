@@ -1,95 +1,130 @@
-#utilJoin{
-    width: 100%; height: 100%; margin-top: 50px;
-    background: url(../img/join1.jpg); object-fit: cover; overflow: hidden; opacity: 0.7;
-    .inner{
-        width: 1180px; height: 750px; 
-        margin: 0 auto; margin-top: 70px;
-        position: relative; padding: 50px 0;
-        
-        &::before{
-            content: ''; display: block;
-            position: absolute; top: 20px; left: 20%;
-            width: 700px; height: 630px;
-            background: rgba(0,0,0,0.3);
-            border-radius: 5px;
-            
-        }
-        .wrap{
-            width: 100%; height: 100%;
-            .join{
-                
-                
-                h1{
-                    font: bold 60px/1 'Kanit';
-                    color: #fff;
-                    position: absolute; left: 26%; top: 6%;
-                    letter-spacing: 2px;
-                    
-                }
+#utilJoin {
+	width: 100%;
+	height: 100%;
+	margin-top: 50px;
+	background: url(../img/join1.jpg);
+	object-fit: cover;
+	overflow: hidden;
+	opacity: 0.7;
+	.inner {
+		width: 1180px;
+		height: 750px;
+		margin: 0 auto;
+		margin-top: 70px;
+		position: relative;
+		padding: 50px 0;
 
-                fieldset{
-                    border-style: none;
-                }
+		&::before {
+			content: '';
+			display: block;
+			position: absolute;
+			top: 20px;
+			left: 20%;
+			width: 700px;
+			height: 630px;
+			background: rgba(0, 0, 0, 0.3);
+			border-radius: 5px;
+		}
+		.wrap {
+			width: 100%;
+			height: 100%;
+			.join {
+				h1 {
+					font: bold 60px/1 'Kanit';
+					color: #fff;
+					position: absolute;
+					left: 26%;
+					top: 6%;
+					letter-spacing: 2px;
+				}
 
-                table{
-                    border-top: 2px solid #fff;
-                    border-bottom: 2px solid #fff;
-                    position: absolute; left: 32%; top: 16%;
-                    padding: 10px;
+				fieldset {
+					border-style: none;
+				}
 
-                    th,td{border-bottom: 1px solid rgb(174, 194, 203); color: #fff; padding: 8px;}
+				table {
+					border-top: 2px solid #fff;
+					border-bottom: 2px solid #fff;
+					position: absolute;
+					left: 32%;
+					top: 16%;
+					padding: 10px;
 
-                    th{
-                        font: bold 18px/1 'Kanit';
-                        &:last-of-type{
-                            border-bottom: none;
-                        }
-                        
-                        input[type=reset],input[type=submit]{
-                            width: 30%; height: 30px; 
-                            border: 1px solid rgba(255,255,255,0.6);
-                            background: rgba(255,255,255,0.6);
-                            color: rgb(76, 115, 133);
-                            margin-left: 10px; margin-top: 20px;
-                            cursor: pointer; transition: 0.5s;
-                            &:hover{
-                                background: rgb(103, 146, 165); color: #fff;
-                            }
-                            
-                            
-                        }
-                    }
+					th,
+					td {
+						font-family: 'Kanit';
+						border-bottom: 1px solid rgb(174, 194, 203);
+						color: #fff;
+						padding: 8px;
+						letter-spacing: 1px;
+					}
 
-                    td{
-                        font: normal 15px/1 'Kanit'; letter-spacing: 1px;
-                        input[type=text],input[type=password],select{
-                            width: 90%; background: rgba(255,255,255,0.6); color: rgb(76, 115, 133); border-color: rgba(255,255,255,0.6); padding: 5px;
-                        }
-                        input[type=radio],input[type=checkbox]{
-                            margin-right: 8px;
-                            
-                        }
+					th {
+						font: bold 18px/1 'Kanit';
+						&:last-of-type {
+							border-bottom: none;
+						}
 
-                        textarea{
-                            resize: none;
-                            width: 100%; height: 60px;
-                            order: 1px solid rgba(255,255,255,0.6);
-                            background: rgba(255,255,255,0.6);
-                            padding: 18px;
-                        }
+						input[type='reset'],
+						input[type='submit'] {
+							width: 30%;
+							height: 30px;
+							border: 1px solid rgba(255, 255, 255, 0.6);
+							background: rgba(255, 255, 255, 0.6);
+							color: rgb(76, 115, 133);
+							margin-left: 20px;
+							margin-top: 10px;
+							cursor: pointer;
+							transition: 0.5s;
+							letter-spacing: 1px;
+							font: bold 17px/1 'Kanit';
 
-                        p{
-                            font: 11px/1 "맑은 고딕";
-                            color: orange; margin-top: 5px;
-                        }
+							&:hover {
+								background: rgb(103, 146, 165);
+								color: #fff;
+							}
+						}
+					}
 
-                        
-                    }
-                    
-                }
-            }
-            
-        }
-    }
+					td {
+						font: normal 15px/1 'Kanit';
+						letter-spacing: 1px;
+						input[type='text'],
+						input[type='password'],
+						select {
+							width: 90%;
+							background: rgba(255, 255, 255, 0.6);
+							color: rgb(76, 115, 133);
+							border-color: rgba(255, 255, 255, 0.6);
+							padding: 5px;
+							font-family: 'Kanit';
+						}
+						input[type='radio'],
+						input[type='checkbox'] {
+							margin-right: 8px;
+							font-family: 'Kanit';
+						}
 
+						textarea {
+							resize: none;
+							width: 100%;
+							height: 60px;
+							order: 1px solid rgba(255, 255, 255, 0.6);
+							background: rgba(255, 255, 255, 0.6);
+							padding: 18px;
+							font-family: 'Kanit';
+							color: rgb(76, 115, 133);
+							letter-spacing: 1px;
+						}
+
+						p {
+							font: 11px/1 '맑은 고딕';
+							color: orange;
+							margin-top: 5px;
+						}
+					}
+				}
+			}
+		}
+	}
 }
